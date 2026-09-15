@@ -31,8 +31,7 @@ abstract class Token implements \JsonSerializable {
 	/**
 	 * @inheritDoc
 	 */
-	#[\ReturnTypeWillChange]
-	abstract public function jsonSerialize();
+	abstract public function jsonSerialize(): mixed;
 
 	/**
 	 * Get a name for the token.
